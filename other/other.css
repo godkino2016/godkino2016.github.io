@@ -1,0 +1,356 @@
+@font-face {
+		font-family: 'header_font';
+		src: url('../fonts/raleway-light-webfont.eot');
+		src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/raleway-light-webfont.woff') format('woff'),
+			 url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+			 url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+		font-weight: 300;
+		font-style: normal;	
+		}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic-ext');
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+/* Header */
+
+.navbar-nav {
+    padding-right: 0;
+    position: relative;
+    left: -50%;
+}
+
+.navbar-nav > li > a {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(90, 90, 90);
+    line-height: 100px;
+    font-family: 'PT Sans','header_font', Trebuchet MS, sans-serif;;
+    transition: all 0.3s;
+}
+
+.navbar-nav > li > a:hover {
+    background: none;
+    text-decoration: none;
+    color: #555;
+}
+.main-title {
+    text-align: center;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: rgb(90, 90, 90);
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: 'Roboto', monospace ,'Fira Sans', sans-serif;
+}
+
+.time-line {
+    margin-top: 80px;
+}
+
+.time-line-page-box::before { 
+    content: "";
+    left: 49.99%;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+}
+
+
+.time-line-box {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+}
+
+.history-img {
+    float: right;
+    padding-left: 50px;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.time-line-box .history-img img {
+    width: 100%;
+    height: auto;
+}
+.history-content {
+    text-align: right;
+    width: 50%;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.history-date {
+    color: #333;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.history-desc-title {
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.history-desc {
+     font-family: 'Roboto' , sans-serif;
+    color: #7a7a7a;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.time-line-box > li {
+    padding-bottom: 80px;
+    overflow: auto;
+}
+
+.history-content-2 {
+    width: 50%;
+    float: right;
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.history-img-2 {
+    padding-left: 0;
+    padding-right: 50px;
+    position: relative;
+    margin-top: 20px;
+    width: 50%;
+    
+}
+
+.time-line-box .history-img-2 img {
+    width: 100%;
+    height: auto;
+}
+.history-dot {
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    margin-top: 25px;
+}
+
+.history-dot-2 {
+    margin-top: -25px;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+}
+.history-content-3 {
+    text-align: center;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.best-films {
+    margin-top: 80px;
+}
+
+.best-films-box {
+    margin-bottom: 30px;
+    height: 350px;
+}
+
+.film-card {
+    width: 49%;
+    height: 350px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    z-index: 1;
+    padding: 0;
+    margin-right: 2%;
+    display: flex;
+}
+
+.best-films-box :last-child {
+    margin-right: 0;
+}
+
+.film-logo-img img {
+    height: 350px;
+    max-width: 270px;
+}
+.film-name {
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+}
+
+.film-date {
+    padding-left: 15px;
+    color: #333;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin: 0;
+}
+
+.film-desc {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #a7a7a7;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 14px;
+}
+
+.actor-card {
+    width: 23.5%;
+    height: 400px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    z-index: 1;
+    padding: 0;
+    margin-right: 2%;
+    display: block;
+}
+
+.best-actors {
+    margin-top: 80px;
+}
+
+.best-actors-box :last-child {
+    margin-right: 0;
+}
+
+.actor-img img {
+    width: 100%;
+    max-height: 265px;
+}
+.actor-name {
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+}
+
+.best-actors-box {
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.actor-position {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #a7a7a7;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 14px;
+}
+
+.actor-date {
+    padding-top: 10px;
+    padding-left: 15px;
+    color: #333;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer {
+    height: 400px;
+    background-color: #f1f1f1;
+    margin-top: 100px;
+    border-top: 1px dashed #888;
+}
+
+.footer ul {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-top: 128px;
+}
+
+.footer li a {
+    color: #a7a7a7;
+    font-size: 24px;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'PT Sans','header_font', Trebuchet MS, sans-serif;
+}
+.author {
+    margin-top: 30px;
+    line-height: 2.5;
+    color: #a7a7a7;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 18px;
+    border-bottom: 1px dashed #888;
+    padding-bottom: 20px;
+}
+
+.mat {
+    color: #a7a7a7;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.mat a {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+.mat a:hover {
+    text-decoration: underline;
+}
+
+.author-mat {
+    margin-top: 44.5px;
+}
+
+.pk-8-img {
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: 50px;
+}
+
+
+
