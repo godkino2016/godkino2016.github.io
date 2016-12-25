@@ -83,7 +83,7 @@ body {
     height: auto;
 }
 .history-content {
-    text-align: right;
+    text-align: justify;
     width: 50%;
     padding-right: 50px;
     padding-top: 20px;
@@ -121,6 +121,7 @@ body {
     float: right;
     margin-top: 20px;
     padding-left: 50px;
+    text-align: justify;
 }
 
 .history-img-2 {
@@ -195,6 +196,7 @@ body {
     padding: 0;
     margin-right: 2%;
     display: flex;
+    text-align: justify;
 }
 
 .best-films-box :last-child {
@@ -317,10 +319,9 @@ body {
 }
 .author {
     margin-top: 30px;
-    line-height: 2.5;
     color: #a7a7a7;
     font-family: 'Roboto' , sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     border-bottom: 1px dashed #888;
     padding-bottom: 20px;
 }
@@ -328,7 +329,7 @@ body {
 .mat {
     color: #a7a7a7;
     font-family: 'Roboto' , sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 20px;
 }
 
